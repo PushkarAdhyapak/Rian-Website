@@ -1,0 +1,11 @@
+/* src/components/ImageGallery.css */
+.image-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-item {
+    max-width: 80%;
+  }
+  

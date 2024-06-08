@@ -1,0 +1,26 @@
+/* src/components/BoxArticles.css */
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.box-article {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.box-article:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
