@@ -1,13 +1,46 @@
 /* src/components/TextContent.css */
 
+.text-and-video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 
-  
-  .text-content{
-    margin-bottom: -100 rem;
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--box-hover-color); /* Optional: Use a specific color for the heading */
-  }
-  
- 
-  
+.text-content {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.text-content h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--box-hover-color);
+}
+
+.text-content p.single {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.video-item {
+  margin: 1rem;
+  flex: 1 1 300px; /* Adjust the flex basis as needed */
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+}

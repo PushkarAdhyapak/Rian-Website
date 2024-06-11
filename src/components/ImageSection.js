@@ -29,8 +29,8 @@ const ImageSection = () => {
 
   const scale = 1 + (scrollPosition / window.innerHeight);
   const fadeOut = 1 - Math.min(scrollPosition / (window.innerHeight / 2), 1);
-  const textOpacity = Math.min(scrollPosition / (window.innerHeight / 2), 1);
-  const textScale = 0.8 + (textOpacity * 0.2); // From 0.8 to 1 as we scroll
+  //const textOpacity = Math.min(scrollPosition / (window.innerHeight / 2), 1);
+  //const textScale = 0.8 + (textOpacity * 0.2); // From 0.8 to 1 as we scroll
 
   return (
     <div className="container">
@@ -38,16 +38,19 @@ const ImageSection = () => {
         className="image"
         src={dark}
         alt=""
-        style={{ transform: `scale(${scale})`, opacity: fadeOut }}
+        style={{transform: `scale(${scale})`, opacity: fadeOut }}
       />
       <div className="top-text" style={{ opacity: fadeOut, color: textColor }}>
-        Strategic<br />
-        LOCALIZATION<br />
-        PARTNER
+        <br />
+        The most capable <b>translation</b>  with AI power and Human Touch<br />
+        Your Content’s global journey starts here!
       </div>
-      <div className="bottom-text" style={{ opacity: textOpacity, transform: `scale(${textScale})` }}>
+      <button className="action-button" >
+        Book Demo
+      </button>
+      {/* <div className="bottom-text" style={{ opacity: textOpacity, transform: `scale(${textScale})` }}>
         World's leading brands trust RIAN with their most critical Translations and Localization.
-      </div>
+      </div> */}
     </div>
   );
 };

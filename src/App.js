@@ -3,9 +3,12 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import TextContent from './components/TextContent';
 import ImageSection from './components/ImageSection'
-import ImageGallery from './components/ImageGallery';
+import Marquee from './components/Marquee'; 
+//import ImageGallery from './components/ImageGallery';
 //import ArrowPath from './components/ArrowPath';
-import VideoPlayer from './components/VideoPlayer'; 
+//import VideoPlayer from './components/VideoPlayer';
+import Global from './components/Global'; 
+import Sample from './components/Sample'; 
 import BoxArticles from './components/BoxArticles'; 
 import Statistics from './components/Statistics';
 import Footer from './components/Footer';
@@ -33,9 +36,10 @@ function App() {
     <div className="App">
       <Navbar />
       <ImageSection/>
-      <TextContent /> 
-      <ImageGallery/>
-      <VideoPlayer />
+      <TextContent/>
+      <Marquee/>
+      <Global/>
+      <Sample/>
       <BoxArticles />
       <Statistics />
       <Footer />

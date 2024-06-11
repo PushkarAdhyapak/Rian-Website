@@ -2,12 +2,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './VideoPlayer.css';
+import video1 from '../assets/video1.mp4'
+import video2 from '../assets/video2.mp4'
+import video3 from '../assets/video3.mp4'
 
-const videos = [
-  "https://www.youtube.com/embed/C2mj0_tSAig?si=6UUe2vlDA7sZI_d-",
-  "https://www.youtube.com/embed/VaNi8m3skB8",
-  "https://www.youtube.com/embed/SfsPejsZuHQ"
-];
+const videos = [video1, video2, video3];
+
 
 const VideoPlayer = () => {
   return (

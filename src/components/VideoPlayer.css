@@ -1,9 +1,10 @@
 /* src/components/VideoPlayer.css */
-.video-container {
+.video-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    margin-bottom: 1rem;
   }
   
   .video-player {
