@@ -1,0 +1,13 @@
+/* src/components/TextContent.css */
+
+
+  
+  .text-content{
+    margin-bottom: -100 rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--box-hover-color); /* Optional: Use a specific color for the heading */
+  }
+  
+ 
+  

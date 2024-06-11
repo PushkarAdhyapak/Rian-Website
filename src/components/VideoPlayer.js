@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import './VideoPlayer.css';
 
 const videos = [
-  "https://www.youtube.com/embed/VIDEO_ID_1",
-  "https://www.youtube.com/embed/VIDEO_ID_2",
-  "https://www.youtube.com/embed/VIDEO_ID_3"
+  "https://www.youtube.com/embed/C2mj0_tSAig?si=6UUe2vlDA7sZI_d-",
+  "https://www.youtube.com/embed/VaNi8m3skB8",
+  "https://www.youtube.com/embed/SfsPejsZuHQ"
 ];
 
 const VideoPlayer = () => {

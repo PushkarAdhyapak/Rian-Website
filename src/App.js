@@ -1,7 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
+import TextContent from './components/TextContent';
+import ImageSection from './components/ImageSection'
 import ImageGallery from './components/ImageGallery';
+//import ArrowPath from './components/ArrowPath';
 import VideoPlayer from './components/VideoPlayer'; 
 import BoxArticles from './components/BoxArticles'; 
 import Statistics from './components/Statistics';
@@ -29,7 +32,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ImageGallery />
+      <ImageSection/>
+      <TextContent /> 
+      <ImageGallery/>
       <VideoPlayer />
       <BoxArticles />
       <Statistics />

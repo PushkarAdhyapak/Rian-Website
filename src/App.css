@@ -25,6 +25,7 @@ body {
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+  margin-bottom: 5rem;
 }
 
 .navbar-menu {
@@ -43,11 +44,19 @@ body {
   color: var(--box-hover-color);
 }
 
-.image-gallery-container {
-  margin-top: 7rem; /* Add space between navbar and image gallery */
+
+
+.video-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 100px; /* Adjust the spacing to the next section */
+  
 }
 
 .box-container {
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
