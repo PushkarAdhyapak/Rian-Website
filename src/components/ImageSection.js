@@ -37,7 +37,6 @@ const ImageSection = () => {
       <img
         className="image"
         src={dark}
-        alt="Background Image"
         style={{ transform: `scale(${scale})`, opacity: fadeOut }}
       />
       <div className="top-text" style={{ opacity: fadeOut, color: textColor }}>
