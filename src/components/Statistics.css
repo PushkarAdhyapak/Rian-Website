@@ -1,22 +1,60 @@
 /* src/components/Statistics.css */
+
 .statistics-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.statistics-item {
+  text-align: center;
+  flex: 1 1 200px; /* Flex basis to allow responsive items */
+  margin: 1rem; /* Add margin for spacing */
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.number span {
+  display: inline-block;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
   .statistics-item {
-    text-align: center;
+    flex: 1 1 100%; /* Full width for each item */
+    margin: 0.5rem 0; /* Adjust margin for spacing */
   }
-  
   .number {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #007BFF;
+    font-size: 1.5rem; /* Adjust font size */
   }
-  
-  .number span {
-    display: inline-block;
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .statistics-item {
+    flex: 1 1 calc(50% - 2rem); /* Two items per row */
+    margin: 1rem; /* Margin for spacing */
   }
-  
+  .number {
+    font-size: 1.75rem; /* Adjust font size */
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 769px) {
+  .statistics-item {
+    flex: 1 1 200px; /* Maintain default flex basis */
+    margin: 1rem; /* Maintain default margin */
+  }
+  .number {
+    font-size: 2rem; /* Maintain default font size */
+  }
+}

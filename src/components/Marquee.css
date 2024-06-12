@@ -1,32 +1,77 @@
+/* src/components/Marquee.css */
+
 .marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: #f0f0f0; /* Light grey background */
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 1rem 0;
+  margin: 2rem 0;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-item {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.marquee-item img {
+  max-height: 60px; /* Adjust the size of the logos */
+  vertical-align: middle;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .marquee {
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+  }
+  .marquee-item {
+    padding: 0 1rem;
+  }
+  .marquee-item img {
+    max-height: 40px; /* Adjust the size of the logos */
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .marquee {
+    padding: 0.75rem 0;
+    margin: 1.5rem 0;
+  }
+  .marquee-item {
+    padding: 0 1.5rem;
+  }
+  .marquee-item img {
+    max-height: 50px; /* Adjust the size of the logos */
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 769px) {
+  .marquee {
     padding: 1rem 0;
     margin: 2rem 0;
   }
-  
-  .marquee-content {
-    display: inline-block;
-    animation: marquee 15s linear infinite;
-  }
-  
   .marquee-item {
-    display: inline-block;
     padding: 0 2rem;
   }
-  
   .marquee-item img {
     max-height: 60px; /* Adjust the size of the logos */
-    vertical-align: middle;
   }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
+}

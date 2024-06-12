@@ -9,6 +9,7 @@ import Marquee from './components/Marquee';
 //import VideoPlayer from './components/VideoPlayer';
 import Global from './components/Global'; 
 import Sample from './components/Sample'; 
+import Services from './components/Services'; 
 import BoxArticles from './components/BoxArticles'; 
 import Statistics from './components/Statistics';
 import Footer from './components/Footer';
@@ -40,6 +41,7 @@ function App() {
       <Marquee/>
       <Global/>
       <Sample/>
+      <Services/>
       <BoxArticles />
       <Statistics />
       <Footer />

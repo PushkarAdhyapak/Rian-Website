@@ -1,0 +1,72 @@
+/* src/components/Services.css */
+
+.services-container {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Allow wrapping of boxes */
+}
+
+.service-box {
+  flex: 1 1 calc(33.333% - 2rem); /* Flex basis to allow three boxes per row */
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border: 1px solid white; /* Add white border */
+  margin-bottom: 1rem; /* Increase space below each box */
+  box-sizing: border-box;
+}
+
+.service-box h4 {
+  margin-bottom: 0.5rem;
+}
+
+.service-box.blue:hover {
+  background-color: blue;
+  color: white;
+  border-color: white; /* Change border color on hover */
+}
+
+.service-box.violet:hover {
+  background-color: violet;
+  color: white;
+  border-color: white;
+}
+
+.service-box.yellow:hover {
+  background-color: yellow;
+  color: black;
+  border-color: white;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .service-box {
+    flex: 1 1 100%; /* Full width for each box */
+    margin-bottom: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .service-box {
+    flex: 1 1 calc(50% - 1rem); /* Two boxes per row */
+    margin-bottom: 1rem;
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 769px) {
+  .service-box {
+    flex: 1 1 calc(33.333% - 2rem); /* Default flex basis for three boxes per row */
+  }
+}

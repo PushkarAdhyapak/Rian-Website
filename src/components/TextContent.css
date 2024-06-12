@@ -31,6 +31,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  flex-direction: row; /* Default layout */
 }
 
 .video-item {
@@ -43,4 +44,57 @@
   height: auto;
   border: none;
   border-radius: 8px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .video-container {
+    flex-direction: column; /* Stack videos vertically */
+  }
+  .video-item {
+    margin: 1rem 0;
+    flex: 1 1 auto;
+  }
+  .text-content h6 {
+    font-size: 1.25rem; /* Adjust heading size */
+  }
+  .text-content p.single {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .video-container {
+    flex-direction: row; /* Stack videos horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+  .video-item {
+    flex: 1 1 45%; /* Adjust flex basis */
+  }
+  .text-content h6 {
+    font-size: 1.35rem; /* Adjust heading size */
+  }
+  .text-content p.single {
+    font-size: 0.95rem; /* Adjust text size */
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 769px) {
+  .video-container {
+    flex-direction: row; /* Default layout */
+    flex-wrap: nowrap; /* No wrapping */
+  }
+  .video-item {
+    flex: 1 1 300px; /* Default flex basis */
+  }
+  .text-content h6 {
+    font-size: 1.5rem; /* Default heading size */
+  }
+  .text-content p.single {
+    font-size: 1rem; /* Default text size */
+  }
 }

@@ -13,6 +13,7 @@ const Samples = () => {
         We Foster the Collective brilliance of minds and machines, shaping the future of language <br />
         technology with precision, insight, and a relentless pursuit of excellence.
       </p>
+      <h2>Seamless Video Localization Across Diverse Domains</h2>
     </div>
 
       <div className="youtube-videos">
@@ -26,7 +27,7 @@ const Samples = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+            src="https://www.youtube.com/embed/u6EhSUe9tpg"
             title="Source Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

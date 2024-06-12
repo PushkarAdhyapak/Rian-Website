@@ -48,9 +48,9 @@ const ImageSection = () => {
       <button className="action-button" >
         Book Demo
       </button>
-      {/* <div className="bottom-text" style={{ opacity: textOpacity, transform: `scale(${textScale})` }}>
+      {/* { <div className="bottom-text" style={{ opacity: textOpacity, transform: `scale(${textScale})` }}>
         World's leading brands trust RIAN with their most critical Translations and Localization.
-      </div> */}
+      </div> } */}
     </div>
   );
 };

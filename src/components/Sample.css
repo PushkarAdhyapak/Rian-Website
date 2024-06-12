@@ -1,43 +1,90 @@
 /* src/components/Samples.css */
 
 .samples-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem auto;
-    max-width: 1200px;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-  
-  .samples-heading {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .samples-heading h6 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--box-hover-color);
-  }
-  
- 
-/* src/components/Samples.css */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.samples-heading {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.samples-heading h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--box-hover-color);
+}
 
 .youtube-videos {
-    display: flex; /* Set display to flex */
-    justify-content: center;
+  display: flex; /* Set display to flex */
+  justify-content: center;
+  flex-wrap: nowrap; /* Ensure videos stay in a single line */
+}
+
+.youtube-video-item {
+  margin: 0 0.5rem; /* Adjust the margin for space between videos */
+  text-align: center;
+}
+
+.youtube-video-item iframe {
+  max-width: calc(50% - 1rem); /* Set the maximum width to half the container width minus margin */
+  border-radius: 8px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .youtube-videos {
+    flex-direction: column; /* Stack videos vertically */
+    align-items: center; /* Center the videos */
+  }
+  .youtube-video-item {
+    margin: 0.5rem 0; /* Adjust the margin for space between videos */
+  }
+  .youtube-video-item iframe {
+    max-width: 100%; /* Set the maximum width to 100% */
+  }
+  .samples-heading h6 {
+    font-size: 1.25rem; /* Adjust heading size */
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .youtube-videos {
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+  .youtube-video-item {
+    flex: 1 1 45%; /* Adjust flex basis */
+    margin: 0.5rem; /* Adjust margin for spacing */
+  }
+  .youtube-video-item iframe {
+    max-width: 100%; /* Set the maximum width to 100% */
+  }
+  .samples-heading h6 {
+    font-size: 1.35rem; /* Adjust heading size */
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 769px) {
+  .youtube-videos {
     flex-wrap: nowrap; /* Ensure videos stay in a single line */
   }
-  
   .youtube-video-item {
-    margin: 0 0.5rem; /* Adjust the margin for space between videos */
-    text-align: center;
+    margin: 0 0.5rem; /* Default margin */
   }
-  
   .youtube-video-item iframe {
-    max-width: calc(50% - 1rem); /* Set the maximum width to half the container width minus margin */
-    border-radius: 8px;
+    max-width: calc(50% - 1rem); /* Default max-width */
   }
-  
-  
+  .samples-heading h6 {
+    font-size: 1.5rem; /* Default heading size */
+  }
+}
