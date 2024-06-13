@@ -28,7 +28,8 @@
 }
 
 .youtube-video-item {
-  margin: 0 0.5rem; /* Adjust the margin for space between videos */
+  
+  margin: 0 0; /* Adjust the margin for space between videos */
   text-align: center;
 }
 

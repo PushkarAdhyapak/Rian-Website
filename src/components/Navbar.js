@@ -2,8 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Navbar.css';
-import logo from '../assets/onlyrian.jpg'
-import onlylogo from '../assets/rianonlylogo.jpg'
+//import logo from '../assets/onlyrian.jpg'
+//import onlylogo from '../assets/rianonlylogo.jpg'
+import logoimage from '../assets/file.png'
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -39,8 +40,8 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${visible ? '' : 'navbar-hidden'}`}>
      
-      <img src={onlylogo} alt="only Logo" className="navbar-onlylogo" />
-      <img src={logo} alt="Rian Logo" className="navbar-logo" />
+      
+      <img src={logoimage} alt="Rian Logo" className="navbar-logo-image" />
       <ul className="navbar-menu">
         {['Home', 'About', 'Solutions', 'Resources', 'Contact Us'].map((item) => (
           <motion.li

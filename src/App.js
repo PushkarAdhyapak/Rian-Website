@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import TextContent from './components/TextContent';
 import ImageSection from './components/ImageSection'
-import Marquee from './components/Marquee'; 
+//import Marquee from './components/Marquee'; 
 //import ImageGallery from './components/ImageGallery';
 //import ArrowPath from './components/ArrowPath';
 //import VideoPlayer from './components/VideoPlayer';
@@ -38,7 +38,7 @@ function App() {
       <Navbar />
       <ImageSection/>
       <TextContent/>
-      <Marquee/>
+      
       <Global/>
       <Sample/>
       <Services/>
