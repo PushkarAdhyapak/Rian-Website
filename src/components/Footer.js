@@ -35,7 +35,7 @@ const Footer = () => {
               <ul>
                 <li>9823959012</li>
                 <li>Sales Enquiry</li>
-                <li>Address<a href="https://www.instagram.com/"></a></li>
+                <li>Address</li>
                 <li>Shivajinagar, Pune 411004</li>
               </ul>
             </div>
