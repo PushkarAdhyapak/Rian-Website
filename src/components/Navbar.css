@@ -54,7 +54,7 @@
   position: relative; /* Add this to enable ::after positioning */
 }
 
-.navbar-item.active {
+.navbar-item.active  {
   color: #007BFF; /* Highlight active item */
 }
 

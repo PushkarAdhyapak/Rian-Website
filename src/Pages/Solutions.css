@@ -1,0 +1,91 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .outer-box {
+    width: 600px;
+    height: 440px;
+    margin: 0 auto;
+    border: 2px solid #4C2D93; /* Purple border */
+    border-radius: 20px;
+    padding: 20px;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropdown-menu {
+    background-color: #4C2D93; /* Purple background */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 250px;
+  }
+  
+  .dropdown-item {
+    position: relative;
+    margin-bottom: 10px; /* Adjust spacing between items */
+  }
+  
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    width: 108%;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex; /* Ensure items are flex containers */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .dropdown-toggle img {
+    margin-right: 10px; /* Adjust spacing between icon/image and text */
+    max-width: 24px; /* Ensure consistent icon/image size */
+    max-height: 24px;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #3a2175; /* Darker purple on hover */
+  }
+  
+  .dropdown-toggle.active {
+    background-color: white;
+    color: #4C2D93; /* Purple text color */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; /* Curved left corner */
+  }
+  
+  .dropdown-submenu {
+    background-color: #f9f9f9; /* Light background for submenu */
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 107%;
+    margin-left: 10px;
+    padding: 20px;
+    /* border-radius: 0px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 250px;
+    text-align: left;
+    
+  }
+  
+  .dropdown-submenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-submenu li {
+    padding: 8px 12px;
+  }
+  
+  .dropdown-submenu li:hover {
+    background-color: #f1f1f1; /* Light grey on hover */
+  }
+  

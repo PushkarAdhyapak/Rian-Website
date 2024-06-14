@@ -1,13 +1,15 @@
 /* src/components/Samples.css */
 
 .samples-container {
+  --global-padding-horizontal: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem auto;
-  max-width: 1200px;
-  padding: 1rem;
+  max-width: 1200px; /* Max-width for larger screens */
   box-sizing: border-box;
+  padding-left: var(--global-padding-horizontal);
+  padding-right: var(--global-padding-horizontal);
 }
 
 .samples-heading {
@@ -28,20 +30,52 @@
 }
 
 .youtube-video-item {
-  
-  margin: 0 0; /* Adjust the margin for space between videos */
+  margin: 0 0.5rem; /* Default margin */
   text-align: center;
+  flex: 1 1 calc(50% - 1rem); /* Adjusted flex basis */
 }
 
 .youtube-video-item iframe {
-  max-width: calc(50% - 1rem); /* Set the maximum width to half the container width minus margin */
+  max-width: 100%; /* Set the maximum width to 100% */
   border-radius: 8px;
 }
 
 /* Media Queries */
 
+/* Large devices (desktops, 769px to 1909px) */
+@media (max-width: 1909px) {
+  .samples-container {
+    padding-left: var(--global-padding-horizontal);
+    padding-right: var(--global-padding-horizontal); /* Increased padding for larger screens */
+  }
+  .youtube-video-item {
+    flex: 1 1 calc(40% - 1rem); /* Adjust flex basis */
+    margin: 1rem; /* Adjust margin for spacing */
+  }
+  .samples-heading h6 {
+    font-size: 1.4rem; /* Adjust heading size */
+  }
+}
+
+/* Medium devices (tablets, 601px to 768px) */
+@media (max-width: 768px) {
+  .samples-container {
+    padding: 1rem;
+  }
+  .youtube-video-item {
+    flex: 1 1 calc(45% - 1rem); /* Adjust flex basis */
+    margin: 0.5rem; /* Adjust margin for spacing */
+  }
+  .samples-heading h6 {
+    font-size: 1.35rem; /* Adjust heading size */
+  }
+}
+
 /* Small devices (phones, 600px and down) */
 @media (max-width: 600px) {
+  .samples-container {
+    padding: 0.5rem;
+  }
   .youtube-videos {
     flex-direction: column; /* Stack videos vertically */
     align-items: center; /* Center the videos */
@@ -54,38 +88,5 @@
   }
   .samples-heading h6 {
     font-size: 1.25rem; /* Adjust heading size */
-  }
-}
-
-/* Medium devices (tablets, 600px to 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
-  .youtube-videos {
-    flex-wrap: wrap; /* Allow wrapping */
-  }
-  .youtube-video-item {
-    flex: 1 1 45%; /* Adjust flex basis */
-    margin: 0.5rem; /* Adjust margin for spacing */
-  }
-  .youtube-video-item iframe {
-    max-width: 100%; /* Set the maximum width to 100% */
-  }
-  .samples-heading h6 {
-    font-size: 1.35rem; /* Adjust heading size */
-  }
-}
-
-/* Large devices (desktops, 768px and up) */
-@media (min-width: 769px) {
-  .youtube-videos {
-    flex-wrap: nowrap; /* Ensure videos stay in a single line */
-  }
-  .youtube-video-item {
-    margin: 0 0.5rem; /* Default margin */
-  }
-  .youtube-video-item iframe {
-    max-width: calc(50% - 1rem); /* Default max-width */
-  }
-  .samples-heading h6 {
-    font-size: 1.5rem; /* Default heading size */
   }
 }

@@ -1,0 +1,9 @@
+/* global.css */
+:root {
+    --global-padding-horizontal: 3rem;
+  }
+  
+  body {
+    padding-left: var(--global-padding-horizontal);
+    padding-right: var(--global-padding-horizontal);
+  }

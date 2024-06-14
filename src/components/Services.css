@@ -1,8 +1,14 @@
+/* src/components/Services.css */
+
 .services-container {
+  margin-right: 3rem;
+  margin-left: 3rem;
   text-align: center;
   margin: 2rem auto;
-  max-width: 1200px;
-  padding: 1rem;
+  max-width: 1200px; /* Max-width for larger screens */
+  padding-left: var(--global-padding-horizontal);
+  padding-right: var(--global-padding-horizontal);
+  box-sizing: border-box;
 }
 
 .service-boxes {
@@ -74,47 +80,52 @@
 
 /* Media Queries */
 
-/* Small devices (phones, 600px and down) */
-@media (max-width: 600px) {
+/* Default (1201px and up) */
+@media (max-width: 1909px) {
+
+  .services-container {
+    margin-right: 3rem;
+    margin-left: 3rem;
+ }
+}
+
+/* Large devices (desktops, 769px to 1200px) */
+@media (max-width: 1200px) {
+  .services-container {
+    padding: 1.5rem;
+  }
   .service-box {
-    flex: 1 1 100%; /* Full width for each box */
-    margin-bottom: 1rem;
+    flex: 1 1 calc(33.333% - 2rem); /* Default flex basis for three boxes per row */
+    padding: 7rem 2rem; /* Maintain standard padding */
+  }
+  .service-boxes {
+    gap: 2rem; /* Maintain standard gap */
   }
 }
 
-/* Medium devices (tablets, 600px to 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
+/* Medium devices (tablets, 601px to 768px) */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 1rem;
+  }
   .service-box {
     flex: 1 1 calc(50% - 1rem); /* Two boxes per row */
     margin-bottom: 1rem;
+    padding: 6rem 2rem; /* Adjusted padding for medium screens */
   }
   .service-boxes {
     gap: 2.5rem; /* Increase the gap for medium screens */
   }
 }
 
-/* Large devices (desktops, 768px and up) */
-@media (min-width: 769px) and (max-width: 1909px){
-  .service-box {
-    flex: 1 1 calc(33.333% - 2rem); /* Default flex basis for three boxes per row */
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .services-container {
+    padding: 0.5rem;
   }
-  .service-boxes {
-    gap: 2rem; /* Increase the gap for larger screens */
+  .service-box {
+    flex: 1 1 100%; /* Full width for each box */
+    margin-bottom: 1rem;
+    padding: 5rem 1.5rem; /* Adjusted padding for smaller screens */
   }
 }
-
-
-
-/* Large devices (desktops, 768px and up) */
-@media (min-width: 1910px) {
-  .service-box {
-    flex: 1 1 calc(33.333% - 2rem); /* Default flex basis for three boxes per row */
-  }
-  .service-boxes {
-    gap: 3rem; /* Increase the gap for larger screens */
-  }
-}
-
-
-
-
