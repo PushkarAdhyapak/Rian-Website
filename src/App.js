@@ -38,7 +38,6 @@ function App() {
       <Navbar />
       <ImageSection/>
       <TextContent/>
-      
       <Global/>
       <Sample/>
       <Services/>

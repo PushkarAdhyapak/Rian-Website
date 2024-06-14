@@ -1,71 +1,57 @@
 import React from 'react';
 import './Footer.css';
-import { motion } from 'framer-motion';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
-  const socialVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-    hover: { scale: 1.3 }, // Scale up on hover
-  };
-
-  const topicVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { delay: 0.3 } },
-  };
-
   return (
-    <footer className="footer">
-      <motion.div
-        className="footer-content"
-        initial="hidden"
-        animate="visible"
-        transition={{ staggerChildren: 0.2 }}
-      >
-        <motion.div className="footer-labels" variants={socialVariants}>
-          <h2>Rian</h2>
-          <div className="social-icons">
-            <motion.a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="hover"
-              variants={socialVariants}
-            >
-              <i className="fab fa-facebook-f"></i>
-            </motion.a>
-            <motion.a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="hover"
-              variants={socialVariants}
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </motion.a>
-            <motion.a
-              href="https://www.youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="hover"
-              variants={socialVariants}
-            >
-              <i className="fab fa-youtube"></i>
-            </motion.a>
+    <>
+      <div className="pre-footer-text">
+        <p>Ready to connect with a global audience? Contact us today and let's bring your videos to life on a global scale.</p>
+      </div>
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-left">
+            <h2>Contact Us</h2>
+            <form>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <textarea placeholder="Message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
           </div>
-        </motion.div>
-        <motion.div className="footer-topics" variants={topicVariants}>
-          <h3>Topics</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </motion.div>
-      </motion.div>
-    </footer>
+          <div className="footer-right">
+            <div className="footer-section navigation">
+              <h2>Navigation</h2>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Features</a></li>
+              </ul>
+            </div>
+            <div className="footer-section contact">
+              <h2>Contact</h2>
+              <ul>
+                <li>9823959012</li>
+                <li>Sales Enquiry</li>
+                <li><a href="mailto:mudassar@gmail.com"></a></li>
+                <li>Shivajinagar, Pune 411004</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2020 All rights reserved | Follow us on:</p>
+          <div className="footer-socials">
+            <a href="#"><i className="fab fa-facebook-f"></i></a>
+            <a href="#"><i className="fab fa-twitter"></i></a>
+            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="#"><i className="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 
