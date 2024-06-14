@@ -24,10 +24,10 @@ const Footer = () => {
             <div className="footer-section navigation">
               <h2>Navigation</h2>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Features</a></li>
+                <li><a href="https://www.instagram.com/">Home</a></li>
+                <li><a href="https://www.instagram.com/">About Us</a></li>
+                <li><a href="https://www.instagram.com/">Services</a></li>
+                <li><a href="https://www.instagram.com/">Features</a></li>
               </ul>
             </div>
             <div className="footer-section contact">
@@ -35,7 +35,7 @@ const Footer = () => {
               <ul>
                 <li>9823959012</li>
                 <li>Sales Enquiry</li>
-                <li><a href="mailto:mudassar@gmail.com"></a></li>
+                <li><a href="https://www.instagram.com/"></a></li>
                 <li>Shivajinagar, Pune 411004</li>
               </ul>
             </div>
@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2020 All rights reserved | Follow us on:</p>
           <div className="footer-socials">
-            <a href="https://www.facebook.com/people/Rian-Rikaian/pfbid02UyFbqXxx26hTFWeWCJGs7mihhxfmHwa6cKrM35KYEMa5UFdbyS7wYyZazqL31Hexl/"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i className="fab fa-facebook-f"></i></a>
             <a href="https://www.youtube.com/channel/UCNyfv71KD7roDPonTcKDnFQ"><i className="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/rian-io"><i className="fab fa-linkedin"></i></a>
