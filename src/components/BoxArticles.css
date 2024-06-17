@@ -1,58 +1,97 @@
 /* src/components/BoxArticles.css */
 
-.box-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem 0;
-  flex-wrap: wrap; /* Allow wrapping of boxes */
+.articles-section {
+  text-align: center;
+  margin: 3rem 0;
+  background-color: #504e4e;
+
 }
 
-.box-article {
-  width: 200px;
-  height: 200px;
-  background-color: var(--box-background-color);
+.article-carousel {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  transition: background-color 0.3s, transform 0.3s;
-  margin: 1rem; /* Add margin for spacing between boxes */
+  position: relative;
+  
 }
 
-.box-article:hover {
-  background-color: var(--box-hover-color);
-  color: #fff;
+.articles {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 1rem;
+  
+}
+
+.article {
+  flex: 1;
+  min-width: calc(100% / 4); /* For large screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  background-color: #1a1a1e;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.article-info {
+  padding: 1rem;
+}
+
+.carousel-button {
+  background-color: #1a1a1e;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.carousel-button.left {
+  position: absolute;
+  left: 0;
+}
+
+.carousel-button.right {
+  position: absolute;
+  right: 0;
+}
+
+.carousel-button:hover {
+  background-color: #333;
 }
 
 /* Media Queries */
 
+/* Medium devices (tablets, 601px to 768px) */
+@media (max-width: 768px) {
+  .article {
+    min-width: calc(100% / 3); /* For tablet screens */
+  }
+
+  .carousel-button {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
 /* Small devices (phones, 600px and down) */
 @media (max-width: 600px) {
-  .box-article {
-    width: 100%; /* Full width for each box */
-    height: auto; /* Adjust height to auto */
-    margin: 0.5rem 0; /* Adjust margin for spacing */
+  .article {
+    min-width: 100%; /* Full width for each article on small screens */
   }
-}
 
-/* Medium devices (tablets, 600px to 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
-  .box-article {
-    width: calc(50% - 2rem); /* Two boxes per row */
-    height: auto; /* Adjust height to auto */
-    margin: 1rem; /* Margin for spacing */
-  }
-}
-
-/* Large devices (desktops, 768px and up) */
-@media (min-width: 769px) {
-  .box-article {
-    width: 200px; /* Maintain default width */
-    height: 200px; /* Maintain default height */
-    margin: 1rem; /* Maintain default margin */
+  .carousel-button {
+    padding: 0.25rem;
+    font-size: 1rem;
   }
 }

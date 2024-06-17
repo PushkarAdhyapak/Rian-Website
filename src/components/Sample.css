@@ -1,15 +1,17 @@
 /* src/components/Samples.css */
 
 .samples-container {
+  
   --global-padding-horizontal: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem auto;
-  max-width: 1200px; /* Max-width for larger screens */
+  
   box-sizing: border-box;
   padding-left: var(--global-padding-horizontal);
   padding-right: var(--global-padding-horizontal);
+  background-color: #504e4e;
 }
 
 .samples-heading {
@@ -33,6 +35,7 @@
   margin: 0 0.5rem; /* Default margin */
   text-align: center;
   flex: 1 1 calc(50% - 1rem); /* Adjusted flex basis */
+  
 }
 
 .youtube-video-item iframe {

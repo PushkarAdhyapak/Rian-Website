@@ -7,7 +7,7 @@ import icon4 from 'D:/PUSHKAR/Web Dev/rian normal/rian-website-normal/src/assets
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="Solutions">
       <h1>Rian - List of Offering</h1>
       <DropdownMenu />
     </div>

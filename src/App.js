@@ -1,8 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import TextContent from './components/TextContent';
 import ImageSection from './components/ImageSection'
+import Solutions from './Pages/Solutions';
 //import Marquee from './components/Marquee'; 
 //import ImageGallery from './components/ImageGallery';
 //import ArrowPath from './components/ArrowPath';
@@ -34,16 +36,16 @@ function App() {
   }, []);
 
   return (
+    <Router>
     <div className="App">
-      <Navbar />
-      <ImageSection/>
-      <TextContent/>
-      <Global/>
-      <Sample/>
-      <Services/>
-      <BoxArticles />
-      <Statistics />
-      <Footer />
+      
+       <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/solutions" element={<Solutions />} />
+          {/* Add other routes here */}
+        </Routes>
+     
+      
      <div
         className="cursor"
         style={{
@@ -52,7 +54,25 @@ function App() {
         }}
       />
         </div>
+        </Router>
   );
+
+  
 }
+
+
+const HomePage = () => (
+  <>
+    <Navbar/> 
+    <ImageSection />
+    <TextContent />
+    <Global />
+    <Sample />
+    <Services />
+    <BoxArticles />
+    <Statistics />
+    <Footer />
+  </>
+);
 
 export default App;

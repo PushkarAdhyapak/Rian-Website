@@ -1,13 +1,10 @@
 /* src/components/Services.css */
 
 .services-container {
-  margin-right: 3rem;
-  margin-left: 3rem;
   text-align: center;
-  margin: 2rem auto;
-  max-width: 1200px; /* Max-width for larger screens */
-  padding-left: var(--global-padding-horizontal);
-  padding-right: var(--global-padding-horizontal);
+  margin: 3rem auto; /* Center the container */
+  /* max-width: 1200px; */
+  padding: 0 1.5rem;
   box-sizing: border-box;
 }
 
@@ -27,7 +24,6 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
   border: 1px solid white; /* Add white border */
   margin-bottom: 1rem; /* Increase space below each box */
-  gap: 2rem;
   box-sizing: border-box;
   color: white;
 }
@@ -35,7 +31,7 @@
 .service-box img {
   position: absolute;
   top: 10px; /* Adjust the space from the top */
-  left: 10px; /* Adjust the space from the right */
+  left: 10px; /* Adjust the space from the left */
   width: 90px; /* Adjust the size of the image */
   height: 90px; /* Adjust the size of the image */
   border-radius: 50%; /* Make the image circular */
@@ -64,7 +60,7 @@
 
 /* Hover effects */
 .service-box.blue:hover {
-  background-color: #8ed1fc;;
+  background-color: #8ed1fc;
   border-color: white; /* Change border color on hover */
 }
 
@@ -74,7 +70,7 @@
 }
 
 .service-box.yellow:hover {
-  background-color: #fcb900;;
+  background-color: #fcb900;
   border-color: white;
 }
 
@@ -82,17 +78,16 @@
 
 /* Default (1201px and up) */
 @media (max-width: 1909px) {
-
   .services-container {
-    margin-right: 3rem;
-    margin-left: 3rem;
- }
+    margin: 3rem auto;
+  }
 }
 
 /* Large devices (desktops, 769px to 1200px) */
 @media (max-width: 1200px) {
   .services-container {
     padding: 1.5rem;
+    margin: 3rem auto;
   }
   .service-box {
     flex: 1 1 calc(33.333% - 2rem); /* Default flex basis for three boxes per row */
@@ -107,6 +102,7 @@
 @media (max-width: 768px) {
   .services-container {
     padding: 1rem;
+    margin: 3rem auto;
   }
   .service-box {
     flex: 1 1 calc(50% - 1rem); /* Two boxes per row */
@@ -122,6 +118,7 @@
 @media (max-width: 600px) {
   .services-container {
     padding: 0.5rem;
+    margin: 3rem auto;
   }
   .service-box {
     flex: 1 1 100%; /* Full width for each box */
