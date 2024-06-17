@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './Solutions.css';
-import icon1 from 'D:/PUSHKAR/Web Dev/rian normal/rian-website-normal/src/assets/1_1.ico';
-import icon2 from 'D:/PUSHKAR/Web Dev/rian normal/rian-website-normal/src/assets/2_1.ico';
-import icon3 from 'D:/PUSHKAR/Web Dev/rian normal/rian-website-normal/src/assets/3_1.ico';
-import icon4 from 'D:/PUSHKAR/Web Dev/rian normal/rian-website-normal/src/assets/4_1.ico';
+import icon1 from '../assets/1_1.jpg';
+import icon2 from '../assets/2_1.jpg';
+import icon3 from '../assets/3_1.jpg';
+import icon4 from '../assets/4_1.jpg';
+
 
 const App = () => {
   return (
